@@ -7,6 +7,12 @@ import javax.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Controller for handle next step by random ai algorithm.
+ *
+ * @author zeldan
+ *
+ */
 @RestController
 public class RandomAiController {
 
@@ -25,7 +31,7 @@ public class RandomAiController {
             final int randomY = generateRandomNumber(height);
             final int index = randomX + randomY * height;
             if (isTableEmpty(table, index)) {
-                step = new RandomStep(randomY + 1, randomX + 1);
+                step = new RandomStep(randomX + 1, randomY + 1);
             }
         }
         return step;
