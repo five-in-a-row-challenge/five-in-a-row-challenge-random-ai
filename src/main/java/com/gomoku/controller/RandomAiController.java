@@ -19,7 +19,7 @@ public class RandomAiController {
     private static final char NONE = 'N';
     private final Random random = new Random();
 
-    @RequestMapping
+    @RequestMapping(value = "/nextMove")
     public RandomStep nextStep(
             @PathParam("width") final int width,
             @PathParam("height") final int height,
