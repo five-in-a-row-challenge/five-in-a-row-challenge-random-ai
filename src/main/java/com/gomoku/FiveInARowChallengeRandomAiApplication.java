@@ -1,6 +1,7 @@
 package com.gomoku;
 
-import org.springframework.boot.SpringApplication;
+import static org.springframework.boot.SpringApplication.run;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
@@ -14,6 +15,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class FiveInARowChallengeRandomAiApplication {
 
     public static void main(final String[] args) {
-        SpringApplication.run(FiveInARowChallengeRandomAiApplication.class, args);
+        run(FiveInARowChallengeRandomAiApplication.class, args);
     }
 }

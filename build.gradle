@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.1.RELEASE'
+		springBootVersion = '1.4.2.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -12,10 +12,11 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'spring-boot'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
 
 jar {
-	baseName = 'demo'
+	baseName = 'five-in-a-row-challenge-random-ai'
 	version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
